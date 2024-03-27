@@ -57,7 +57,7 @@ const movies = [
 ];
 
 app.get('/', (req, res) => {
-    res.json(movies);
+    res.json(books);
 });
 
 app.listen(3000, () => {
