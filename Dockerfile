@@ -1,5 +1,7 @@
 FROM node:21-alpine3.18
 
+RUN npm install -g nodemon
+
 # Create app directory
 COPY . /app
 
@@ -19,5 +21,5 @@ RUN npm install
 EXPOSE 3000
 
 # Start app
-CMD [ "npm", "start" ]
+CMD ["npm", "run", "dev"]
 
